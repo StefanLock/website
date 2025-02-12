@@ -4,37 +4,87 @@
         <title>Stefan Lock</title>
         <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
     <div id="navigation">
         <ul>
             <li><a href="#bio">Bio</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#techstack">Tech Stack</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
           </ul>
     </div>
     <div class="banner">
-        <img src="https://picsum.photos/400/" alt="A random image which is just a placeholder">
+        <img src="resources/img/profile.jpeg" alt="A profile image of Stefan Lock">
         <div>
             <h3>Stefan Lock</h3>
-            <p><i class="material-icons">location_on</i> Buckinghamshire, UK</p>
+            <p><i class="material-icons">place</i>Buckinghamshire, UK</p>
             <a href="https://www.linkedin.com/in/stefan-lock-055aba64/" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://github.com/StefanLock" target="_blank"><i class="fa fa-github"></i></a>
             <a href=mailto:stefanthomaslock@gmail.com target="_blank"><i class="fa fa-envelope"></i></a>
         </div>
     </div>
     <div id="bio">
-        <p>This is me</p>
+        <p>
+            Hi,<br><br> I'm Stefan, a DevOps engineer with over a decade of experience collaborating with diverse teams across various industries. I've worked with a wide range of technologies and companies, from SMB to large enterprises, giving me a broad perspective on the DevOps landscape.<br><br>This site serves as a portfolio of my work, a place for knowledge sharing, and a resource for potential employers.  Explore the Projects section to see what I'm currently working on and past projects I'm proud of.  Interestingly enough, this very site began as one of those projects – a static page hosted on S3.
+        </p>
     </div>
-    <div id="skills">
-        <p>Skills</p>
+    <div id="techstack">
+        <p>
+            <strong>Tech Stack</strong><br><br>
+            This is not an extensive list but a high level list of core technologies I tend to lean towards when starting a project.
+        </p>
+    </div>
+    <div id="tech_logos">
+        <img src="./resources/img/logos/Terraform.svg">
+        <img src="./resources/img/logos/aws.svg">
+        <img src="./resources/img/logos/python.svg">
+        <img src="./resources/img/logos/docker.svg">
+        <img src="./resources/img/logos/GitHub.png">
+        <img src="./resources/img/logos/datadog.svg">
     </div>
     <div id="projects">
-        <p>Projects</p>
+        <div id="project-cards">
+            <div class="project-card" data-project-id="1">
+                <h2>Terraform deployment pipeline</h2>
+                <p>A deployment pipeline spinning up an ECS cluster within AWS</p>
+                <p>Status: <strong>Active</strong></p>
+              </div>
+              
+              <div class="project-card" data-project-id="2">
+                <h2>Flask API</h2>
+                <p>A small Flask api that queries AWS for security recommendations and produces a report</p>
+                <p>Status: <strong>Active</strong></p>
+              </div>
+
+              <div class="project-card" data-project-id="3">
+                <h2>IDP</h2>
+                <p>An internal developer platform that allows engineers to request blueprints of AWS infrastructure.</p>
+                <p>Status: <strong>Active</strong></p>
+              </div>
+
+              <div class="project-card" data-project-id="3">
+                <h2>AWS SSM Automation</h2>
+                <p>Terraform code to deploy AWS SSM automated docs to allow operations engineers to perform routine tasks.</p>
+                <p>Status: <strong>Active</strong></p>
+              </div>
+              
+              <div id="projectModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2 id="modal-title"></h2>
+                  <img id="modal-image" src="" alt="Project Screenshot">
+                  <p id="modal-description"></p>
+                  <a id="modal-link" href="#" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+        </div>
     </div>
+
     <div id="testimonials">
         <p>Testimonials</p>
     </div>
+    <script src="./resources/scripts/modal.js"></script>
 </body>

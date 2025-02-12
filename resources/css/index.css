@@ -1,7 +1,7 @@
 :root {
     --color-1: #0A122A;
-    --color-2: #698f3f;
-    --color-3: #fbfaf8;
+    --color-2: #fbfaf8;
+    --color-3: #698f3f;
     --color-4: #E7DECD;
   }
 
@@ -104,6 +104,15 @@
   padding: 0.5em;
 }
 
+.fa-python {
+  background: white;
+  color: black;
+  padding: 1em;
+}
+
+.material-icons {
+  padding: 0.25em;
+}
 
 #bio {
   color: var(--color-1);
@@ -121,11 +130,12 @@
   padding: 2em;
 }
 
-#skills {
+#techstack {
   color: var(--color-1);
   border-radius: 0px 25px 25px 0px;
   margin-top: 5%;
   margin-bottom: 5%;
+  margin-left: 0;
   background-color: var(--color-4);
   position: relative;
   width: 80%;
@@ -133,8 +143,24 @@
   text-align: right;
 }
 
-#skills p {
-  padding: 2em;
+#techstack p {
+  padding: 1em;
+}
+
+#tech_logos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  background-color: var(--color-4);
+
+}
+
+#tech_logos img {
+  width: 50%;
+  height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #projects {
@@ -149,8 +175,63 @@
   text-align: left;
 }
 
-#projects p {
-  padding: 2em;
+#projects h2 {
+  padding: 0.5em;
+}
+
+#project-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Basic Card Styling */
+.project-card {
+  border: 1px solid var(--color-2);
+  border-radius: 25px;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer; /* Indicate clickable */
+  box-shadow: 5px 10px var(--color-2);
+}
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: var(--color-1);
+  color: var(--color-4);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid var(--color-2);
+  border-radius: 25px;
+  width: 80%; /* Could be more or less */
+  max-height: 80vh; /* Limit the max height */
+  overflow-y: auto; /* Add vertical scroll */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
 }
 
 #testimonials {
