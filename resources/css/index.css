@@ -8,12 +8,21 @@
 
 * {
     font-family: Verdana, sans-serif;
-    color: var(--color-3);
   }
 
   body {
     background-color: var(--color-1);
     margin: 0;
+    color: var(--color-4);
+  }
+
+  #maintenance {
+    background-color: var(--color-1);
+    color: var(--color-4);
+    margin: auto;
+    width: 50%;
+    font-size: 2em;
+    text-align: center;
   }
 
   #navigation {
@@ -41,7 +50,7 @@
 
   #navigation a {
     text-decoration: none;
-    color: var(--color-3);
+    color: var(--color-4);
   }
 
   .banner {
@@ -88,5 +97,75 @@
   color: black;
   padding: 0.5em;
 }
-  
+
+.fa-envelope {
+  background: white;
+  color: black;
+  padding: 0.5em;
+}
+
+
+#bio {
+  color: var(--color-1);
+  border-radius: 25px 0px 0px 25px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--color-4);
+  position: relative;
+  width: 80%;
+  left: 20%;
+  text-align: left;
+}
+
+#bio p {
+  padding: 2em;
+}
+
+#skills {
+  color: var(--color-1);
+  border-radius: 0px 25px 25px 0px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--color-4);
+  position: relative;
+  width: 80%;
+  right: 20%;
+  text-align: right;
+}
+
+#skills p {
+  padding: 2em;
+}
+
+#projects {
+  color: var(--color-1);
+  border-radius: 25px 0px 0px 25px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--color-4);
+  position: relative;
+  width: 80%;
+  left: 20%;
+  text-align: left;
+}
+
+#projects p {
+  padding: 2em;
+}
+
+#testimonials {
+  color: var(--color-1);
+  border-radius: 0px 25px 25px 0px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--color-4);
+  position: relative;
+  width: 80%;
+  right: 20%;
+  text-align: right;
+}
+
+#testimonials p {
+  padding: 2em;
+}
   
