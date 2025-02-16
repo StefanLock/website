@@ -19,6 +19,18 @@ const projectData = {  // Store your project details here
     description: "More about project 2...",
     link: "https://github.com/yourusername/project2"
   },
+  "3": {
+    title: "Project 2 Details",
+    image: "path/to/project2.jpg",
+    description: "More about project 2...",
+    link: "https://github.com/yourusername/project2"
+  },
+  "4": {
+    title: "Project 2 Details",
+    image: "path/to/project2.jpg",
+    description: "More about project 2...",
+    link: "https://github.com/yourusername/project2"
+  },
   // ... more projects
 };
 
