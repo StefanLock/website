@@ -117,13 +117,13 @@
 #bio {
   color: var(--color-1);
   border-radius: 25px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: var(--color-4);
   position: relative;
-  width: 80%;
-  left: 10%;
-  right: 10%;
+  width: 90%;
+  left: 5%;
+  right: 5%;
   text-align: center;
   box-shadow: 5px 10px var(--color-2);
 }
@@ -135,8 +135,8 @@
 #techstack {
   color: var(--color-1);
   border-radius: 25px 0px 0px 25px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 0;
   background-color: var(--color-4);
   position: relative;
@@ -163,7 +163,7 @@
 }
 
 #tech_logos img {
-  width: 50%;
+  width: 40%;
   height: 40%;
   display: block;
   margin-left: auto;
@@ -173,8 +173,8 @@
 #projects {
   color: var(--color-1);
   border-radius: 25px 0px 0px 25px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: var(--color-4);
   position: relative;
   width: 80%;
@@ -245,8 +245,8 @@
 #testimonials {
   color: var(--color-1);
   border-radius: 25px 0px 0px 25px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: var(--color-4);
   position: relative;
   width: 80%;
@@ -259,10 +259,29 @@
   padding: 2em;
 }
 
+#testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+}
+
+.testimonials-entry {
+  margin: 2%;
+  background-color: var(--color-4);
+  color: var(--color-1);
+  border-radius: 25px;
+  text-align: center;
+  padding: 2%;
+}
+
 
 /* Non-Browsers screens */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+  #navigation li {
+    display: block;
+  }
+
   #techstack {
     color: var(--color-1);
     border-radius: 25px;
@@ -276,6 +295,21 @@
     right: 10%;
     text-align: center;
     box-shadow: 5px 10px var(--color-2);
+  }
+
+  #tech_logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: var(--color-4);
+  }
+
+  #tech_logos img {
+    width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #projects {
@@ -304,5 +338,28 @@
     right: 10%;
     text-align: center;
     box-shadow: 5px 10px var(--color-2);
+  }
+
+  #testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 700px) {
+  #tech_logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-4);
+  }
+
+  #tech_logos img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
