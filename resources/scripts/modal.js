@@ -8,30 +8,23 @@ const closeButton = document.querySelector('.close');
 
 const projectData = {  // Store your project details here
   "1": {
-    title: "Project 1 Details",
-    image: "path/to/project1.png", // Path to your image
-    description: "Detailed description of project 1.  You can use HTML here if needed (e.g., for paragraphs, lists, etc.)",
-    link: "https://github.com/yourusername/project1"
+    title: "Python Build pipeline",
+    image: "",
+    description: "A python build pipeline using Github actions for a basic flask api.",
+    link: "https://github.com/StefanLock/python-build-pipeline"
   },
   "2": {
-    title: "Project 2 Details",
-    image: "path/to/project2.jpg",
-    description: "More about project 2...",
-    link: "https://github.com/yourusername/project2"
+    title: "Monitoring Stack",
+    image: "",
+    description: "A monitoring stack made up of Grafana, Loki and prometheus which can be run locally for demo purposes.",
+    link: "https://github.com/StefanLock/monitoring-stack"
   },
   "3": {
-    title: "Project 2 Details",
-    image: "path/to/project2.jpg",
-    description: "More about project 2...",
-    link: "https://github.com/yourusername/project2"
+    title: "Portable IDE",
+    image: "",
+    description: "A portable IDE wrapped in Docker which can be run anywhere",
+    link: "https://github.com/StefanLock/docker-ide"
   },
-  "4": {
-    title: "Project 2 Details",
-    image: "path/to/project2.jpg",
-    description: "More about project 2...",
-    link: "https://github.com/yourusername/project2"
-  },
-  // ... more projects
 };
 
 cards.forEach(card => {
