@@ -9,8 +9,8 @@ const closeButton = document.querySelector('.close');
 const projectData = {  // Store your project details here
   "1": {
     title: "Python Build pipeline",
-    image: "",
-    description: "A python build pipeline using Github actions for a basic flask api.",
+    image: "resources/img/python-build-pipeline.png",
+    description: "A python build pipeline template using Github actions for a basic flask api.",
     link: "https://github.com/StefanLock/python-build-pipeline"
   },
   "2": {
@@ -39,10 +39,10 @@ cards.forEach(card => {
     const project = projectData[projectId];
 
     modalTitle.textContent = project.title;
-    modalImage.src = project.image;
     modalDescription.innerHTML = project.description; // Use innerHTML for HTML content
     modalLink.href = project.link;
     modalLink.style.display = project.link ? 'block' : 'none'; // Show/hide link
+    modalImage.src = project.image;
 
     modal.style.display = 'block';
   });
