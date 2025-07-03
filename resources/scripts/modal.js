@@ -15,13 +15,13 @@ const projectData = {  // Store your project details here
   },
   "2": {
     title: "Monitoring Stack",
-    image: "",
+    image: "resources/img/monitoring_stack.png",
     description: "A monitoring stack made up of Grafana, Loki and prometheus which can be run locally for demo purposes.",
     link: "https://github.com/StefanLock/monitoring-stack"
   },
   "3": {
     title: "Portable IDE",
-    image: "",
+    image: "resources/img/docker_ide.png",
     description: "A portable IDE wrapped in Docker which can be run anywhere",
     link: "https://github.com/StefanLock/docker-ide"
   },
